@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style media="screen"></style>
+
+<meta http-equiv="author" content="http://www.jiorm.com,Jiorm工作室">
+<meta name="description" content="Jiorm工作室">
+<meta name="keywords" content="Jiorm工作室">
+<link href="http://bcs.duapp.com/jiorm2/favicon.ico" rel="shortcut icon">
+<link href="http://bcs.duapp.com/jiormnew/jiormnew/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.page{display:none;}
+</style>
+<!--[if IE 6]>
+<style type="text/css">
+	html {
+    background: url(about:black) no-repeat fixed}
+    .code {position: absolute;}
+    .code {top: expression(offsetParent.scrollTop + 500);}
+</style>
+<![endif]-->
+<script type="text/javascript" src="http://bcs.duapp.com/jiormnew/jiormnew/pngFix.js"></script>
+<script type="text/javascript" src="http://bcs.duapp.com/jiormnew/jiormnew/jquery-1.3.1.js"></script>
+<script type="text/javascript" src="http://bcs.duapp.com/jiormnew/jiormnew/jq.easing.1.3.pack.js"></script>
+<script type="text/javascript">
+         var curNum = 1-2;
+   </script>
+<script type="text/javascript" src="http://bcs.duapp.com/jiormnew/jiormnew/nav.js"></script>
+<script type="text/javascript" src="http://bcs.duapp.com/jiormnew/jiormnew/gg.js"></script>
+<script type="text/javascript" src="http://bcs.duapp.com/jiormnew/jiormnew/all.js"></script>
+<script type="text/javascript" src="http://bcs.duapp.com/jiormnew/jiormnew/faiScroll.js"></script>
+<script type="text/javascript">
+	if($.browser.safari) {
+		$( function() {
+			$("#pftop").hide();
+		});
+	}
+	$(function(){
+		$('img').each(function(){//替换图片
+			if(($(this).attr('src')).indexOf('.')<0) $(this).attr('src','');					   
+		});	
+	});
+	function AddFavorite(sURL, sTitle) {   
+	    try {   
+	        window.external.addFavorite(sURL, sTitle);   
+	    } catch (e) {   
+	        try {   
+	            window.sidebar.addPanel(sTitle, sURL, "");   
+	        } catch (e) {   
+	            alert("加入收藏失败，请使用Ctrl+D进行添加");   
+	        }   
+	    }   
+	}     
+	  
+	function SetHome(obj, vrl) {   
+	    try {   
+	        obj.style.behavior = 'url(#default#homepage)';   
+	        obj.setHomePage(vrl);   
+	    } catch (e) {   
+	        if (window.netscape) {   
+	            try {   
+	                netscape.security.PrivilegeManager   
+	                        .enablePrivilege("UniversalXPConnect");   
+	            } catch (e) {   
+	                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");   
+	            }   
+	            var prefs = Components.classes['@mozilla.org/preferences-service;1']   
+	                    .getService(Components.interfaces.nsIPrefBranch);   
+	            prefs.setCharPref('browser.startup.homepage', vrl);   
+	        }   
+	    }   
+	}   
+</script><meta name="baidu-tc-verification" content="8275da533f58d054c0f782f8da02bf0d">
+<script type="text/javascript" src="http://bcs.duapp.com/jiormnew/jiormnew/jTip.js"></script>
+<script type="text/javascript">     
+ var bForcepc = fGetQuery("dv") == "pc";     
+ function fBrowserRedirect(){     
+     var sUserAgent = navigator.userAgent.toLowerCase();     
+     var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";       
+     var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";     
+     var bIsMidp = sUserAgent.match(/midp/i) == "midp";     
+     var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";     
+     var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";     
+     var bIsAndroid = sUserAgent.match(/android/i) == "android";     
+     var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";     
+     var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";     
+     if(bIsIpad){     
+         var sUrl = location.href;         
+         if(!bForcepc){     
+		  
+            //window.location.href = "http://jiormnew.duapp.com";     
+			
+         }     
+     }     
+     if(bIsIphoneOs || bIsAndroid){     
+         var sUrl = location.href;         
+         if(!bForcepc){     
+		
+            //window.location.href = "http://www.jiorm.com";    
+		
+         }     
+     }     
+     if(bIsMidp||bIsUc7||bIsUc||bIsCE||bIsWM){     
+         var sUrl = location.href;         
+         if(!bForcepc){     
+        	 window.location.href = "http://www.jiorm.com";    
+		  
+         }     
+     }     
+ }     
+ function fGetQuery(name){//获取参数值     
+     var sUrl = window.location.search.substr(1);     
+     var r = sUrl.match(new RegExp("(^|&)" + name + "=([^&]*)(&|$)"));     
+     return (r == null ? null : unescape(r[2]));     
+ }     
+ function fShowVerBlock(){        
+     if(bForcepc){     
+         document.getElementById("dv_block").style.display = "block";     
+     }     
+     else{     
+         document.getElementById("ad_block").style.display = "block";     
+     }     
+ }     
+ fBrowserRedirect();     
+ </script>  
+<style>
+.bizmail_loginpanel{font-size:12px;width:275px;height:auto;border:1px solid #cccccc;background:none;}
+.bizmail_LoginBox{padding:5px;}
+.bizmail_loginpanel h3{padding-bottom:5px;margin:0 0 5px 0;border-bottom:1px solid #cccccc;font-size:14px;}
+.bizmail_loginpanel form{margin:0;padding:0;}
+.bizmail_loginpanel input.text{font-size:12px;width:100px;height:20px;margin:0 2px;border:1px solid #C3C3C3;border-color:#7C7C7C #C3C3C3 #C3C3C3 #9A9A9A;background:none;}
+.bizmail_loginpanel .bizmail_column{height:28px;}
+.bizmail_loginpanel .bizmail_column label{display:block;float:left;width:30px;height:24px;line-height:24px;font-size:12px;}
+.bizmail_loginpanel .bizmail_column .bizmail_inputArea{float:left;width:200px;}
+.bizmail_loginpanel .bizmail_column span{font-size:12px;word-wrap:break-word;margin-left: 2px;line-height:200%;}
+.bizmail_loginpanel .bizmail_SubmitArea{margin-left:30px;clear:both;}
+.bizmail_loginpanel .bizmail_SubmitArea a{font-size:12px;margin-left:5px;}
+.bizmail_loginpanel select{width:110px;height:20px;margin:0 2px;}
+</style>
+<title>Jiorm工作室</title>  
+</head>
+<body>
+<div class="code"><img src="http://bcs.duapp.com/jiorm2/2014_11_19_1012172231.png" width="100" height="100" alt="jiorm工作室二维码"><div>
+jiorm工作室</div></div>
+<div class="container position">
+  <div class="top_nav">
+  <span><a href="http://jiormnew.duapp.com/#" onclick="SetHome(this,window.location)">设为首页</a></span><span><a href="http://jiormnew.duapp.com/#" onclick="AddFavorite(window.location,document.title)">加入收藏</a></span></div>
+    <div class="top_logo">
+    	<img src="http://bcs.duapp.com/jiormnew/jiormnew/logo.png" width="207" height="63" alt="者目工作室" class="pngFix" />
+    </div>
+    <div class="clear"></div>
+    <div class="nav">
+    	<ul>
+        	<li><a href="/news/" class="">IT新闻<span>NEWS</span></a>
+            	<div style="left: 0px; top: 47px; width: 800px; display: none;" class="subnav">
+              		<a href="/news/">News</a>
+       			</div>
+            </li>
+            <li><a href="/team/" class="">我们的团队<span>OUR TEAM</span></a>
+            	<div style="left: -9px; top: 47px; width: 800px; display: none;" class="subnav">
+              		<a href="/team/">团队成员 </a>
+       			</div>
+            </li>
+            <li><a href="/article/" class="">优秀文章<span>ARTICLE</span></a>
+            	<div style="left: -30px; top: 47px; width: 500px; display: none;" class="subnav">
+    <a href="/article/">文章列表</a>
+       			</div>
+            </li>
+            <li><a href="/work/" class="">作品展示<span>WORKS</span></a>
+            	<div style="left: -8px; top: 47px; width: 250px; display: none;" class="subnav">
+              	<a href="/work/">作品列表</a>
+       			</div>
+            </li>
+            <li><a href="/contactus/" class="">业务联系<span>CONTACT US</span></a>
+            	<div style="left: -50px; top: 47px; width: 300px; display: none;" class="subnav">
+       			</div>
+            </li>
+           
+                       
+            <li><a href="http://www.cytyk.com" class="">成员博客<span>BLOG</span></a>
+            	<div style="left: 0px; top: 47px; width: 200px; display: none;" class="subnav">
+                </div>
+            </li>
+        </ul>
+    </div>
+          <div class="banner"><img src="http://bcs.duapp.com/jiormnew/jiormnew/sub_banner.png" width="1000" height="160" alt="做最好的自己" /></div>
+        <div class="clear"></div>
+    <div class="content">
+         <div class="content_left">
+        	<div><img src="http://bcs.duapp.com/jiormnew/jiormnew/i_news_title_bg.jpg" border="0" usemap="#Map5">
+              <map name="Map5" id="Map5">
+                <area shape="rect" coords="438,4,507,24" href="#">
+              </map>
+    		</div>
+            <div class="idenx_news">
+				<div class="idenx_news_pic">
+                	<ul style="left: -1470px;">
+                	                      	<li>
+                        	<div class="idenx_news_pic_title">
+                            	<span><a href="#" title=""></a></span>
+                            </div>
+                            <div><img src="http://bcs.duapp.com/jiorm2/IMG_20141004_122509.jpg" width="490" height="250" alt=""></div>
+                        </li>
+                                          	<li>
+                        	<div class="idenx_news_pic_title">
+                            	<span><a href="#" title="python"></a></span>
+                            </div>
+                            <div><img src="http://bcs.duapp.com/jiorm2/WP_20130801_017.jpg" width="490" height="250" alt=""></div>
+                        </li>
+                                          	<li>
+                        	<div class="idenx_news_pic_title">
+                            	<span><a href="/content/?id=7" title="#"></a></span>
+                            </div>
+                            <div><img src="http://bcs.duapp.com/jiorm2/WP_20130801_111.jpg" width="490" height="250" alt=""></div>
+                        </li>
+                                          	<li>
+                        	<div class="idenx_news_pic_title">
+                            	<span><a href="#" title=""></a></span>
+                            </div>
+                            <div><img src="http://bcs.duapp.com/jiorm2/1215.jpg" width="490" height="250" alt=""></div>
+                        </li>
+                  </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="idenx_news_img">
+                	<ul>
+                	                      	<li class=""><img src="http://bcs.duapp.com/jiorm2/IMG_20141004_122509.jpg" width="115" height="65"></li>
+                                          	<li class=""><img src="http://bcs.duapp.com/jiorm2/WP_20130801_017.jpg" width="115" height="65"></li>
+                                          	<li class=""><img src="http://bcs.duapp.com/jiorm2/WP_20130801_111.jpg" width="115" height="65"></li>
+                                          	<li style="margin-right:0px;" class="news_select"><img src="http://bcs.duapp.com/jiorm2/1215.jpg" width="115" height="65"></li>
+                  </ul>
+                </div>
+            </div>
+			<div class="info">
+            	<div class="info_title">公告：</div>       
+                <div class="info_list">
+                	<ul style="margin-top: 0px;">
+                	      	                      	                         
+	                      	                         
+	                      	                         
+	                                          <li><a href="#">者目（Jiorm）工作室参加网页设计大赛</a></li>
+	                                            <object width="32" height="32">
+                                                <li><a href="#">者目（jiorm）工作室成立2014年7月</a>
+                                                </object>
+	                                          </li>
+                	</ul>
+                </div>
+                <div id="prev"><a></a></div>
+                <div id="next"><a></a></div>
+            </div>
+        </div>
+   	  <div class="content_left" style="display:none;">
+        	<div>
+        	      <img src="http://bcs.duapp.com/jiormnew/jiormnew/i_news_title_bg.jpg" border="0" usemap="#Map5">
+	              <map name="Map5" id="Map5">
+	                <area shape="rect" coords="438,4,507,24" href="#">
+	              </map>
+        	</div>
+            <div class="i_news_img">
+				<div id="banner1">
+					  <script type="text/javascript" src="http://bcs.duapp.com/jiormnew/jiormnew/jquery.cycle.all.js"></script>
+                      <ul class="image" style="position: relative;">
+                          <li style="position: absolute; top: 0px; left: 0px; display: none; z-index: 4; opacity: 0;"><img src="http://bcs.duapp.com/jiormnew/jiormnew/test5.jpg" width="495" height="100"></li>
+                          <li style="position: absolute; top: 0px; left: 0px; display: block; z-index: 4; opacity: 0.24403600000000003;"><img src="http://bcs.duapp.com/jiormnew/jiormnew/test6.jpg" width="495" height="100"></li>
+                          <li style="position: absolute; top: 0px; left: 0px; display: block; z-index: 5; opacity: 0.755964;"><img src="http://bcs.duapp.com/jiormnew/jiormnew/test5.jpg" width="495" height="100"></li>
+                          <li style="position: absolute; top: 0px; left: 0px; display: none; z-index: 4; opacity: 0;"><img src="http://bcs.duapp.com/jiormnew/jiormnew/test6.jpg" width="495" height="100"></li>
+                      </ul>
+                      <ul class="btns">
+                          <li><a title="" href="javascript:;" target="_blank" class=""></a></li>
+                          <li><a title="" href="javascript:;" target="_blank" class=""></a></li>
+                          <li><a title="" href="javascript:;" target="_blank" class="activeSlide"></a></li>
+                          <li><a title="" href="javascript:;" target="_blank" class=""></a></li>
+                      </ul>
+              </div>
+            </div>
+      </div>
+       
+    	<span class="banner"></span>
+    	<div class="content_right">
+        	<div>
+            	<img src="http://bcs.duapp.com/jiormnew/jiormnew/sixiangku.jpg" width="415" height="30" border="0" usemap="#Map4">
+                <map name="Map4" id="Map4">
+                  <area shape="rect" coords="342,3,399,23" href="#">
+                </map>
+          </div>
+            <div class="right_nianhui">
+            	<div class="right_wenku_div">
+                	<a href="/work/"><img src="http://bcs.duapp.com/jiormnew/jiormnew/zuopin.jpg" width="30" height="92"></a>
+                </div>
+                <div class="right_wenku_div1" style="margin-top:0px;">
+                	<a href="/work/">作品展示<br>展示者目（Jiorm）工作室及其成员作品。</a>
+                </div>
+            </div>
+            <div class="right_wenku">
+            	<div class="right_wenku_div">
+                	<a href="/article/"><img src="http://bcs.duapp.com/jiormnew/jiormnew/wenku.jpg" width="30" height="92"></a>
+                </div>
+                <div class="right_wenku_div1">
+                	<a href="/article/">者目文库，是者目（Jirom）工作室文章合集，收录了工作室成员的文章，以及收集到的优美文章。它见证了工作室的成长，同时也见证了工作室成员的成长。</a>
+                </div>
+            </div>
+             <div class="right_shipin">
+            	<div class="right_wenku_div">
+                	<a href="#"><img src="http://bcs.duapp.com/jiormnew/jiormnew/video.jpg" width="30" height="92"></a>
+                </div>
+				<div class="right_wenku_div1" style=" margin-top:0px; height:auto;">
+                	<a href="/dosome/">一个成功的实践，胜过一千打纲领。<br>我们用一个个成功的案例诠释了我们的实力。<br></a>
+                </div>
+             </div>
+            <div class="right_shipin" style="display:none;">
+           
+            	<div class="right_wenku_div">
+                	<img src="http://bcs.duapp.com/jiormnew/jiormnew/video.jpg" width="30" height="92">
+                </div>
+                
+                <div class="right_shipin_div1">
+                	<div class="right_arr_right"><a href="javascript:;"></a></div>
+                	<div class="right_arr_left"><a href="javascript:;"></a></div>
+                	<ul>
+                    	<li>
+                        	<div class="title2"><a href="#">谭浩的思想实践－我这样策划人生</a> </div>
+                            <div class="des2">一路走来，话题从日本农业到家族企业传承，再到日本经济泡沫破灭的经验教训，每个话题的讨论看似与中国似乎毫无关系，但其实都是希望通过日本的发展......</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+      </div>
+        <div class="i_sk">
+        	<div style="width:100%; height:30px; position:relative;"><img src="http://bcs.duapp.com/jiormnew/jiormnew/sk.jpg" width="100" height="30" alt="" style="position:absolute; left:0px; top:0px;"><a href="#" style="position:absolute; right:0px; top:0px;"><img src="http://bcs.duapp.com/jiormnew/jiormnew/more1.jpg" width="89" height="27"></a></div>
+            <div class="i_sk_nav">
+            	<ul>
+                	<li class="selected">侧记</li>
+                    <li>格言妙语</li>
+                    <li>IT文摘</li>
+                    <li>推荐</li>
+                </ul>
+            </div>
+            <div class="newsListInfo">
+            	<ul>
+                	<li>
+                	                    	       		                    	<div class="title3">
+		                        	<div class="img2"><img src="http://bcs.duapp.com/jiorm2/02-071612_2721.jpg" width="94" height="60"></div>
+		                            <div class="name1"><a href="#" title="者目工作室">大学生活与工作室</a></div>
+		                            <div class="info1">大学有丰富的课余时间，有的用来玩游戏了，有的用来结交朋友去了，有的强身健体，有的得过且过...而我们，一群有共同爱好的有志青年组成了一个团队。</div>
+		                        </div>
+	                                                                	                                               	                                               	                                                       <div class="des3">
+                                                                                                                                           	    <div><a href="#" title="中国，不着急！——谭浩谈新型城镇化"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">&nbsp;大学，要不断尝试体验<span>2014-07-01</span></a></div>
+                        	                                                                                    	    <div><a href="#" title="王志纲：把生活变成交响乐"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">&nbsp;把生活变成交响乐<span>2014-05-26</span></a></div>
+                        	                                                                                    	  
+                        	                                                      </div>
+                    </li>
+                    <li>
+                    	                	       		                    	<div class="title3">
+		                        	<div class="img2"><img src="http://bcs.duapp.com/jiorm2/02-071612_2721.jpg" width="94" height="60"></div>
+		                            <div class="name1"><a href="#" title=""></a></div>
+		                            <div class="info1">人生的磨难是很多的，所以我们不可对于每一件轻微的伤害都过于敏感。在生活磨难面前，精神上的坚强和无动于衷是我们抵抗罪恶和人生意外的最好武器。</div>
+		                        </div>
+	                                                                	                                               	                                               	                                                       <div class="des3">
+                        	                                                                                                                	    <div><a href="#" title="鸭绿江边的香格里拉"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">&nbsp;真理惟一可靠的标准就是永远自相符合。<span>2014-10-28</span></a></div>
+                        	                                                                                    	    <div><a href="#" title=""><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">&nbsp;剽悍的人生不需要解释。<span>2014-10-19</span></a></div>
+                        	                                 
+                        	                                                      </div>
+                    </li>
+                    <li>
+                    	                	       		                    	<div class="title3">
+		                        	<div class="img2"><img src="http://bcs.duapp.com/jiorm2/02-071612_2721.jpg" width="94" height="60"></div>
+		                            <div class="name1"><a href="/content/?id=13" title="微软市值升至全球第二，仅次于竞">微软市值升至全球第二，仅次于竞</a></div>
+		                            <div class="info1">受原油价格下跌致埃克森美孚市值减少470亿美元的影响，该公司把全球第二大市值公司的头衔拱手相让给了微软。</div>
+		                        </div>
+	                                                                	                                               	                                               	                                                       <div class="des3">
+                        	                                                                                                                	    <div><a href="/content/?id=14" title="论文化"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">&nbsp;Google正式发布Android 5.0<span>2009-12-07</span></a></div>
+                        	                                                                                    	    <div><a href="/content/?id=9" title="财智论语（五）"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">&nbsp;如果诺基亚Lumia手机用上安卓系统<span>2009-10-14</span></a></div>
+                        	                                                                                    	    <div><a href="#" title="论人生-1人生格言"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">&nbsp;论人生-1王志纲人生格言<span>2008-11-14</span></a></div>
+                        	                                                      </div>
+                    </li>
+                    <li>
+                    	                	       		                    	<div class="title3">
+		                        	<div class="img2"><img src="http://bcs.duapp.com/jiorm2/02-071612_2721.jpg" width="94" height="60"></div>
+		                            <div class="name1"><a href="#" title="一些经典的网站及资料推荐">一些经典的网站及资料推荐</a></div>
+		                            <div class="info1"><a href="http://www.w3school.com.cn/">w3c网页制作学习</a><br />
+                                    <a href="http://djangobook.py3k.cn/">django学习</a></div>
+		                        </div>
+	                                                                	                                               	                                               	                                                       <div class="des3">
+                        	                                                                                                                	    <div><a href="http://www.jisuanke.com/" title=""><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">&nbsp;计蒜客，一个计算机学习网站<span>2014-09-12</span></a></div>
+                        	                                                                                    	    <div><a href="http://www.shiyanlou.com/" title=""><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">实验楼，一家以实验为中心的计算机学习网<span>2014-08-28</span></a></div>
+                        	                                                                                    	    <div><a href="#" title="文化地产：谭浩与樊建川激情对话"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">&nbsp;文化地产：王志纲与樊建川激情对话<span>2003-09-26</span></a></div>
+                        	                                                      </div>
+                    </li>
+                    <li>
+                    	                	       		
+	                                                                	                                               	                                                       <div class="des3">
+                        	                                                                                                                	    <div><a href="#" title="人的城镇化是一个长期过程"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">&nbsp;人的城镇化是一个长期过程<span>2013-06-09</span></a></div>
+                        	                                                                                    	    <div><a href="#" title="我为什么关注“新型城镇化”？"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">&nbsp;我为什么关注“新型城镇化”？<span>2013-06-06</span></a></div>
+                        	                                                      </div>
+                    </li>
+                    <li>
+                    	                	       		                    	<div class="title3">
+		                        	<div class="img2"><img src="http://bcs.duapp.com/jiormnew/jiormnew/index_wzg.png" width="94" height="60"></div>
+		                            <div class="name1"><a href="#" title="新华网：《把兰州建成辐射中亚中心城市》">新华网：《把兰州建成辐射中亚中心城市》</a></div>
+		                            <div class="info1"></div>
+		                        </div>
+	                                                                	                                               	                                                       <div class="des3">
+                        	                                                                                                                	    <div><a href="#" title="钱学森谈创新精神-转自&lt;钱学森的最后一次系统谈话&gt;"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">&nbsp;钱学森谈创新精神-转自&lt;钱学森的最后一次系统...<span>2009-11-06</span></a></div>
+                        	                                                                                    	    <div><a href="#" title="王志纲观点 —— 谈文化产业（下） "><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect.jpg" width="6" height="6">&nbsp;王志纲观点 —— 谈文化产业（下）<span>2009-09-14</span></a></div>
+                        	                                                      </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="i_ts" id="thinking">
+        	<div>
+        	  <img src="http://bcs.duapp.com/jiormnew/jiormnew/qy.jpg" width="503" height="45" border="0" usemap="#Map3">
+              <map name="Map3" id="Map3">
+                <area shape="rect" coords="422,4,495,34" href="#">
+              </map>
+        	</div>
+            <ul>
+         {%for passage in passages %}                                                  	   <li><a href="/content/?id={{passage.id}}" title="passage.passage_title"><img src="" width="6" height="6">&nbsp;{{passage.passage_title}}<span>2014-09-23</span></a></li>
+{%endfor%}            	                                                                                                                                                                                                                                             	   	                                             	   
+            	                                             	   
+          </ul>
+        </div>
+        <div class="line"><img src="http://bcs.duapp.com/jiormnew/jiormnew/line.jpg" width="951" height="6"></div>
+      <div class="i_tanhao" style="display:none;">
+       	<div class="i_tanhao_logo"><img src="http://bcs.duapp.com/jiormnew/jiormnew/i_logo.png" width="38" height="114"></div>
+            <div class="i_tanhao_left"><a href="#">th会是由谭浩工作室发起创办,选择工作室客户中志同道合者为会员组成的高端交流和资源整合平台。工作室的目标是“致力于打造中国最好的战略思想库”,依...</a></div>
+            <div class="i_zhigang_right">
+            	<ul>
+            	                  	<li><a href="#" title="会助力慈善，助推“圆计划”启航"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect1.jpg" width="11" height="11">&nbsp;智纲会助力慈善，助推“圆计...<span>2014-03-18</span></a></li>
+                                  	<li><a href="#" title="跨界与整合——2014会年会于西双版纳召开"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect1.jpg" width="11" height="11">&nbsp;跨界与整合——智纲2014...<span>2014-02-20</span></a></li>
+                                  	<li><a href="#" title="走进会员  发现资源"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect1.jpg" width="11" height="11">&nbsp;走进会员  发现资源<span>2014-01-10</span></a></li>
+                                  	<li><a href="http://www.wzg.net.cn/magazine_show-1917.html" title="“智纲会”助推“圆计划”，为慈善事业植入战略芯片"><img src="http://bcs.duapp.com/jiormnew/jiormnew/rect1.jpg" width="11" height="11">&nbsp;“美丽会”助推“圆计划”，...<span>2013-11-08</span></a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer clear">
+    	 <div style="width:980px; margin:0 auto;">
+ <a href="http://jiormnew.duapp.com" target="_blank">Copy</a>right reserved by Jiorm工作室 Tel:18381306184/18381318332/18381300764 E-mail:1262941401@qq.com/fu0110@live.com/vesensu@sina.com</div>
+<script type="text/javascript" src="http://bcs.duapp.com/jiormnew/jiormnew/bot.js"></script>
+	</div>
+    	<script type="text/javascript">
+$(function() {
+	$('#banner1 .image').cycle({
+		fx:     'fade', 
+        timeout: 3000,
+        pager:  '#banner1 .btns',
+        pagerAnchorBuilder: function(idx, slide) {
+            return '#banner1 .btns li:eq(' + (idx) + ') a';
+        }
+    });	
+});
+    </script>
+<script type="text/javascript">
+$(function(){
+	$('.info_list').myScroll({visible:1});	
+	$(".wjt_nav li").eq(0).hover(function(){
+		$(this).addClass("wjt_video_cur");
+		$("#Video").show();
+		$("#Pic").hide();
+		$(".wjt_nav li").eq(1).removeClass("wjt_pic_cur");
+	})
+	$(".wjt_nav li").eq(1).hover(function(){
+		$(this).addClass("wjt_pic_cur");
+		$("#Video").hide();
+		$("#Pic").show();
+		$(".wjt_nav li").eq(0).removeClass("wjt_video_cur");
+	})
+})
+</script>
+<script type="text/javascript">
+//<![CDATA[
+$(function(){
+    var x = 10;  
+	var y = 20;
+	$(".i_tanhao_logo").mouseover(function(e){
+       	this.myTitle = this.title;
+		this.title = "";	
+	    var tooltip = "<div id='tooltip'>"+ this.myTitle +"<\/div>"; //创建 div 元素
+		$("body").append(tooltip);	//把它追加到文档中
+		$("#tooltip")
+			.css({
+				"top": (e.pageY + y) + "px",
+				"left": (e.pageX  + x) + "px"
+			}).show("fast");	  //设置x坐标和y坐标，并且显示
+    }).mouseout(function(){		
+		this.title = this.myTitle;
+		$("#tooltip").remove();   //移除 
+    });
+});
+//]]>
+</script>
+    </div>
+</div>
+
+</body></html>

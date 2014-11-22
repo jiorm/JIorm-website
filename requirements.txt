@@ -1,0 +1,4 @@
+MySQL-python
+django==1.5.2
+bae_image
+bae_memcache

@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from  -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style media="screen"></style>
+
+<meta http-equiv="author" content="http://www.jiorm.com,Jiorm工作室">
+<meta name="description" content="Jiorm工作室">
+<meta name="keywords" content="Jiorm工作室">
+<link href="favicon.ico">
+<link href="http://bcs.duapp.com/jiorm2/contactus%2Fstyle.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.page{display:none;}
+</style>
+<!--[if IE 6]>
+<style type="text/css">
+	html {
+    background: url(about:black) no-repeat fixed}
+    .code {position: absolute;}
+    .code {top: expression(offsetParent.scrollTop + 500);}
+</style>
+<![endif]-->
+<script type="text/javascript" src="http://bcs.duapp.com/jiorm2/contactus%2FpngFix.js"></script>
+<script type="text/javascript" src="http://bcs.duapp.com/jiorm2/contactus%2Fjquery-1.3.1.js"></script>
+<script type="text/javascript" src="http://bcs.duapp.com/jiorm2/contactus%2Fjq.easing.1.3.pack.js"></script>
+<script type="text/javascript">
+        var curNum = 6-1;
+   </script>
+<script type="text/javascript" src="http://bcs.duapp.com/jiorm2/contactus%2Fnav.js"></script>
+<script type="text/javascript" src="http://bcs.duapp.com/jiorm2/contactus%2Fgg.js"></script>
+<script type="text/javascript" src="http://bcs.duapp.com/jiorm2/contactus%2Fall.js"></script>
+<script type="text/javascript" src="http://bcs.duapp.com/jiorm2/contactus%2FfaiScroll.js"></script>
+<script type="text/javascript">
+	if($.browser.safari) {
+		$( function() {
+			$("#pftop").hide();
+		});
+	}
+	$(function(){
+		$('img').each(function(){//替换图片
+			if(($(this).attr('src')).indexOf('.')<0) $(this).attr('src','themes/wzg/images/article_default.png');					   
+		});	
+	});
+	function AddFavorite(sURL, sTitle) {   
+	    try {   
+	        window.external.addFavorite(sURL, sTitle);   
+	    } catch (e) {   
+	        try {   
+	            window.sidebar.addPanel(sTitle, sURL, "");   
+	        } catch (e) {   
+	            alert("加入收藏失败，请使用Ctrl+D进行添加");   
+	        }   
+	    }   
+	}     
+	  
+	function SetHome(obj, vrl) {   
+	    try {   
+	        obj.style.behavior = 'url(#default#homepage)';   
+	        obj.setHomePage(vrl);   
+	    } catch (e) {   
+	        if (window.netscape) {   
+	            try {   
+	                netscape.security.PrivilegeManager   
+	                        .enablePrivilege("UniversalXPConnect");   
+	            } catch (e) {   
+	                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");   
+	            }   
+	            var prefs = Components.classes['@mozilla.org/preferences-service;1']   
+	                    .getService(Components.interfaces.nsIPrefBranch);   
+	            prefs.setCharPref('browser.startup.homepage', vrl);   
+	        }   
+	    }   
+	}   
+</script><title>Jiorm工作室</title>  
+</head>
+<body>
+<div class="code"><img src="http://bcs.duapp.com/jiorm2/2014_11_19_1012172231.png" width="100" height="100" alt="jiorm工作室二维码"><div>
+jiorm工作室</div></div>
+<div class="container position">
+  <div class="top_nav">
+  <span><a href="http://jiormnew.duapp.com/#" onclick="SetHome(this,window.location)">设为首页</a></span><span><a href="http://jiormnew.duapp.com/#" onclick="AddFavorite(window.location,document.title)">加入收藏</a></span></div>
+    <div class="top_logo">
+    	<img src="http://bcs.duapp.com/jiormnew/jiormnew/logo.png" width="207" height="63" alt="者目工作室" class="pngFix" />
+    </div>
+    <div class="clear"></div>
+    <div class="nav">
+    	<ul>
+        	<li><a href="/news/" class="">IT新闻<span>NEWS</span></a>
+            	<div style="left: 0px; top: 47px; width: 800px; display: none;" class="subnav">
+              		<a href="/news/">News</a>
+       			</div>
+            </li>
+            <li><a href="/team/" class="">我们的团队<span>OUR TEAM</span></a>
+            	<div style="left: -9px; top: 47px; width: 800px; display: none;" class="subnav">
+              		<a href="/team/">团队成员 </a>
+       			</div>
+            </li>
+            <li><a href="/article/" class="">优秀文章<span>ARTICLE</span></a>
+            	<div style="left: -30px; top: 47px; width: 500px; display: none;" class="subnav">
+    <a href="/article/">文章列表</a>
+       			</div>
+            </li>
+            <li><a href="/work/" class="">作品展示<span>WORKS</span></a>
+            	<div style="left: -8px; top: 47px; width: 250px; display: none;" class="subnav">
+              	<a href="/work/">作品列表</a>
+       			</div>
+            </li>
+            <li><a href="/contactus/" class="">业务联系<span>CONTACT US</span></a>
+            	<div style="left: -50px; top: 47px; width: 300px; display: none;" class="subnav">
+       			</div>
+            </li>
+           
+                       
+            <li><a href="http://www.cytyk.com" class="">成员博客<span>BLOG</span></a>
+            	<div style="left: 0px; top: 47px; width: 200px; display: none;" class="subnav">
+                </div>
+            </li>
+        </ul>
+    </div>
+          <div class="sub_banner">           	   <img src="http://bcs.duapp.com/jiorm2/contactus%2Fsub_banner.png" width="1000" height="160" alt="打造中国最好的战略思想库">
+           </div>
+        <div style="display:inline-block;">
+     <div class="sub_nav">
+   	<div class="sub_top">业务联系</div>
+   	   <div id="nav">
+                <ul>
+                                      	                    <li><p class="join_type open1">项目联系</p>
+	                        	                    </li>
+                                                          	                   
+	                        	                 
+                                                          	                    <li><p class="join_type "><a href="#">协作交流</a></p>
+	                        	                    </li>
+                                                      </ul>
+            </div>
+       <div class="aside" style="display:none;">
+       	<ul>
+                         		    	 <li class="cur">项目联系</li>
+		      		                 		         <li><a href="#">协作交流</a>
+		         		         </li>
+		      		              </ul>
+       </div>
+       <div class="sub_video" style="display:none;">
+			<a href="#"><img src="http://bcs.duapp.com/jiorm2/contactus%2Fad.jpg" width="201" height="400" alt=""></a>
+        </div>
+   </div>
+   <div id="pftop" style="display: none; top: 522px;">
+      <div class="topwarp">
+            <a class="top" href="#"><img title="top" alt="返回顶部" src="http://bcs.duapp.com/jiorm2/contactus%2Ftop.png" width="26" height="39"></a>
+      </div>
+      <div style=" margin-top:10px;"><a href="/l"><img src="http://bcs.duapp.com/jiorm2/contactus%2Fback.png" width="26" height="93" alt="返回首页"></a></div>
+    </div>
+    <script type="text/javascript">
+    jQuery(function () {
+        jQuery("#nav ul li p").click( 
+		function () {
+			if($(this).hasClass("open1")){
+				$(this).attr("class", "join_type");
+				$(this).next(".join_typeinfo").slideUp("fast");
+				
+				
+			}else{
+				$("#nav ul li p").attr("class", "join_type");
+				$(this).attr("class", "open1");
+				$("#nav ul li .join_typeinfo").slideUp("normal");
+				$(this).next().slideToggle("normal"); 
+			}
+			
+		});
+    })
+</script>    <div class="sub_content">
+    	<div class="sub_content_title">
+        	<span>项目联系</span>
+        </div>
+	        <div class="doing_top">
+	           	           <div class="ywlx_top">
+                                                      如果您需要请工作室提供策划咨询服务，如果您有项目需要工作室的合作，请尽量详细填写下列表格，以便我们尽可能全面地了解您的情况，提高工作效率，缩短您与我们之间的距离。我们将会有专人与您联系，尽快作出回复。
+	            </div>
+	            <div class="ywlx_input">
+	            	<form action="/send/" method="get" id="FrontPage_Form1">
+	            		<div class="xmlx_div1"><span>项目名称：</span><input type="text" name="field1"><span>项目所在地：</span><input type="text" name="field2">
+	                  </div>
+	                    <div class="ywlx_div3">
+	                    	项目概况（包括：1、项目简介；2、公司简介；3、初步设想；4、主要问题；5、欲达目的；6、其它）<br>
+	                        <textarea name="field3"></textarea>
+	                    </div>
+	                    <div class="ywlx_div4">
+	                    	<span>联系人：</span><input type="text" name="field4"><span>职务：</span><input type="text" name="field5"><span>电话：</span><input type="text" name="field6"><span>E-MAIL：</span><input type="text" name="field7">
+	                    </div>
+	                    
+	                    <div class="ywlx_div5">
+	                        <input type="hidden" name="type" value="1">
+	                    	<input type="submit" value="提交" id="S_btn">
+	                        <input type="reset" value="重置" id="R_btn">
+	                    </div>
+	                </form>
+	            </div>
+	           	           	           	           	        </div>
+       
+        <div class="page">
+      <div class="page_prev"><a href="#"></a></div>
+            <div class="page_next"><a href="#"></a></div>
+        </div>
+    </div>
+    </div>
+   
+    <div class="footer clear">
+   	   <div style="width:980px; margin:0 auto;">
+ <a href="#" target="_blank">Copy</a>right reserved by Jiorm工作室Tel:18381306184/18381318332/18381300764 E-mail:1262941401@qq.com/fu0110@live.com/vesensu@sina.com</div>
+<script type="text/javascript" src="http://bcs.duapp.com/jiorm2/contactus%2Fbot.js"></script>
+    </div>
+</div>
+
+</body></html>
